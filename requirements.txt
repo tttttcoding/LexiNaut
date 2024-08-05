@@ -1,0 +1,3 @@
+langchain-chatchat
+langchain-chatchat[xinference]
+xinference
