@@ -1,3 +1,2 @@
-langchain-chatchat
 langchain-chatchat[xinference]
-xinference
+xinference[all]

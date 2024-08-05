@@ -131,3 +131,16 @@
 2024-08-04 16:38:34.191 | WARNING  | chatchat.server.utils:get_default_llm:205 - default llm model glm4-chat is not found in available llms, using qwen2-instruct instead
 2024-08-04 16:38:34.191 | WARNING  | chatchat.server.utils:get_default_llm:205 - default llm model glm4-chat is not found in available llms, using qwen2-instruct instead
 2024-08-04 16:38:34.191 | WARNING  | chatchat.server.utils:get_default_llm:205 - default llm model glm4-chat is not found in available llms, using qwen2-instruct instead
+2024-08-05 15:56:41.719 | WARNING  | chatchat.server.utils:detect_xf_models:107 - cannot connect to xinference host: http://127.0.0.1:9997, please check your configuration.
+2024-08-05 15:56:41.723 | WARNING  | chatchat.server.utils:get_default_llm:205 - default llm model glm4-chat is not found in available llms, using qwen:7b instead
+2024-08-05 15:56:41.756 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
+2024-08-05 15:56:41.773 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
+2024-08-05 15:56:41.793 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
+2024-08-05 15:56:41.814 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
+2024-08-05 15:56:41.853 | SUCCESS  | chatchat.cli:init:47 - 开始初始化项目数据目录：D:\code\project\_project\LexiNaut
+2024-08-05 15:56:41.862 | SUCCESS  | chatchat.cli:init:49 - 创建所有数据目录：成功。
+2024-08-05 15:56:42.201 | SUCCESS  | chatchat.cli:init:52 - 复制 samples 知识库文件：成功。
+2024-08-05 15:56:42.235 | SUCCESS  | chatchat.cli:init:54 - 初始化知识库数据库：成功。
+2024-08-05 15:56:42.524 | SUCCESS  | chatchat.cli:init:66 - 生成默认配置文件：成功。
+2024-08-05 15:56:42.524 | SUCCESS  | chatchat.cli:init:67 - 请先检查确认 model_settings.yaml 里模型平台、LLM模型和Embed模型信息已经正确
+2024-08-05 15:56:42.525 | SUCCESS  | chatchat.cli:init:76 - 执行 chatchat kb -r 初始化知识库，然后 chatchat start -a 启动服务。
