@@ -1,0 +1,5 @@
+2024-08-10 09:27:55.562 | WARNING  | chatchat.server.utils:detect_xf_models:107 - cannot connect to xinference host: http://127.0.0.1:9997, please check your configuration.
+2024-08-10 09:27:55.564 | WARNING  | chatchat.server.utils:get_default_llm:205 - default llm model glm4-chat is not found in available llms, using qwen:7b instead
+2024-08-10 09:27:55.587 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
+2024-08-10 09:27:55.591 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
+2024-08-10 09:27:55.595 | WARNING  | chatchat.server.utils:get_default_embedding:214 - default embedding model bge-m3 is not found in available embeddings, using quentinz/bge-large-zh-v1.5 instead
