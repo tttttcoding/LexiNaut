@@ -3,7 +3,7 @@
 python server/api_allinone.py
 
 加载多个非默认模型：
-python server/api_allinone.py --model-path-address model1@host1@port1 model2@host2@port2 
+python server/api_allinone.py --model-path-address model1@host1@port1 model2@host2@port2
 
 多卡启动：
 python server/api_allinone.py --model-path-address model@host@port --num-gpus 2 --gpus 0,1 --max-gpu-memory 10GiB
@@ -19,7 +19,7 @@ import uvicorn
 from api import create_app
 from llm_api_stale import controller_args, launch_all, parser, server_args, worker_args
 
-parser.add_argument("--api-host", type=str, default="0.0.0.0")
+parser.add_argument("--api-host", type=str, default="127.0.0.1")
 parser.add_argument("--api-port", type=int, default=7861)
 parser.add_argument("--ssl_keyfile", type=str)
 parser.add_argument("--ssl_certfile", type=str)

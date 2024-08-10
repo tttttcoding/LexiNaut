@@ -15,6 +15,10 @@ from chatchat.server.api_server.kb_routes import kb_router
 from chatchat.server.api_server.openai_routes import openai_router
 from chatchat.server.api_server.server_routes import server_router
 from chatchat.server.api_server.tool_routes import tool_router
+from chatchat.server.api_server.base_routes import base_router
+# from chatchat.server.base.middleware import CORSMiddleware, origins
+# from chatchat.server.base.models import Base
+# from chatchat.server.base.database import engine
 from chatchat.server.chat.completion import completion
 from chatchat.server.utils import MakeFastAPIOffline
 
@@ -37,12 +41,14 @@ def create_app(run_mode: str = None):
     @app.get("/", summary="swagger 文档", include_in_schema=False)
     async def document():
         return RedirectResponse(url="/docs")
-
-    app.include_router(chat_router)
-    app.include_router(kb_router)
-    app.include_router(tool_router)
-    app.include_router(openai_router)
-    app.include_router(server_router)
+    # Base.metadata.create_all(bind=engine)
+    # app.include_router(base_router)
+    # app.include_router(chat_router)
+    # app.include_router(kb_router)
+    # app.include_router(tool_router)
+    # app.include_router(openai_router)
+    # app.include_router(server_router)
+    # app.add_middleware(CORSMiddleware, allow_origins=origins)
 
     # 其它接口
     app.post(
