@@ -1,2 +1,0 @@
-2024-08-04 16:37:55,303 openai._base_client 8682 INFO     Retrying request to /chat/completions in 0.898983 seconds
-2024-08-04 16:37:56,205 openai._base_client 8682 INFO     Retrying request to /chat/completions in 1.859042 seconds

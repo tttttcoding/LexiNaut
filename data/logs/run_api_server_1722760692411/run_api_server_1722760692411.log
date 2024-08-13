@@ -1,1 +1,0 @@
-2024-08-04 16:38:20,949 httpx        9423 INFO     HTTP Request: POST http://127.0.0.1:9997/v1/chat/completions "HTTP/1.1 200 OK"

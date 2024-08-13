@@ -6,72 +6,19 @@ LexiNaut-智能语航是一款基于LLM的本地知识库项目, 基于Langchain
 - Agent对话 & 管理
 
 ## 项目说明
-### 目录
-```
-总览
-常用的在data、libs、frontend这三个地方
-  |- data
-    |- knowledge_base   向量数据库
-    |- logs             运行日志
-  |- docker             Docker部署相关文件
-  |- frontend           前端
-  |- libs               后端
-  |- tools              CLI工具 & 辅助工具
-  | xxx.yaml            各种配置项
+项目目前通过两个项目分别组成前后端, 放弃原有二次开发逻辑
 
-
-```
 ### 技术栈
 前端
 - Vue 全家桶
 - TS
 
-
-后端 (Python)
+后端 & 模型
 - FastAPI
 - Langchain
-- StreamLit (后端自带Web UI)
+- xinference
 
 详细文档见原项目内.md文档说明、技术栈相关官方文档
-
-## 项目启动
-
-预备事项
-- 做好文件夹管理
-- 做好备份
-
-实测下来, Windows和Linux上均可, Linux安装和启动更加稳定
-- 磁盘需要预留10-20G, 用于安装依赖以及LLM、Embedding模型
-
-### 代码克隆
-```
-  > git clone xxx(当前项目的远程代码)
-```
-
-
-### 依赖安装
-
-设置镜像
-Python设置国内镜像, 以提速
-```
-  阿里源
-  > pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
-```
-
-安装依赖
-1. 切换到v0.1版本的分支
-2. 切换到项目目录下, 安装所需依赖 (建议切换到独立虚拟环境安装), 安装过程很漫长
-```
-  > pip install -r requirements.txt
-```
-
-遇到chatglm-cpp-python的bug, 需要github下载源文件手动安装
-需要对应到自己的python版本以及OS, 比如windows python3.11对应xxx-cp311-win_amd64.whl: https://github.com/li-plus/chatglm.cpp
-```
-  > pip install ./xxx
-```
-
-
 
 ### 模型安装
 启动XINFERENCE, 模型下载 & 加载框架
@@ -102,19 +49,6 @@ windows下启动
 低配置的LLM问答输出会较慢, 这是正常的
 
 
-### 启动
-
-1. 在XINFERENCE中启动LLM模型和Embedding模型, 配置同上一步
-   - 遇到Quantization报错的, 试着三个量化(4bit、8bit、None)都换着启动, 这个报错有点玄学
-2. 项目根目录中启动chatchat api
-```
-  > chatchat start -a
-```
-打开对应的端口, 与自带的streamlit页面可以正常对话, 且终端无报错, 即启动成功
-
-
-
-
 ## 更新日志
 v 0.1 (2024.8.2-5)
 - 项目平台接入 & 初始化
@@ -127,3 +61,7 @@ v 0.2（8.6 - 8.8）
   - 前端整体更换
 - 文档更进
 - 后端基础功能接入调试
+
+v 0.3 (8.9 - 8.13)
+- 架构调整
+- xinference后端接入
