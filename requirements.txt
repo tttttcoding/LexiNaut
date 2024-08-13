@@ -1,2 +1,0 @@
-langchain-chatchat[xinference]
-xinference[all]
